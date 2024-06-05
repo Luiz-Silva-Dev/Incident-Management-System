@@ -1,7 +1,7 @@
-from func.login import *
-from func.cadastro import *
-from usuarios.admins import *
-from usuarios.user import *
+from program.func.login import *
+from program.func.cadastro import *
+from program.usuarios.admins import *
+from program.usuarios.user import *
 
 while True:
     escolha1 = input("""

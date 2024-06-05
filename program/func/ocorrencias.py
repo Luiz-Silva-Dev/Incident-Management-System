@@ -256,7 +256,7 @@ Tipo de ocorrencia: """)
             print('Cep invalido!')
             continue
 
-    conect = sqlite3.connect('./ocorrencias.db')
+    conect = sqlite3.connect('ocorrencias.db')
 
     cursor = conect.cursor()
 

@@ -15,7 +15,7 @@ def toStringOCO():
 
     i = 0
 
-    conect = sqlite3.connect('./ocorrencias.db')
+    conect = sqlite3.connect('ocorrencias.db')
 
 
     program = f"select * from casos;"
@@ -43,7 +43,7 @@ def apagar_ocorrencia():
     import func.ocorrencias as oco
     toStringOCO()
 
-    conect = sqlite3.connect('./ocorrencias.db')
+    conect = sqlite3.connect('ocorrencias.db')
 
     cursor = conect.cursor()
 
@@ -117,7 +117,7 @@ Selecione: ''')
         elif select ==  '2':
             apagar_ocorrencia()
         elif select == '3':
-            conect = sqlite3.connect('./ocorrencias.db')
+            conect = sqlite3.connect('ocorrencias.db')
 
             while True:
                 novo_id = input('Digite seu novo ID: ')

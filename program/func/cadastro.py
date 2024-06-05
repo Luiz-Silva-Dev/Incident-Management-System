@@ -28,7 +28,7 @@ def validar_senha(senha):
 def validar_id(ident):
     import sqlite3
 
-    conect = sqlite3.connect('./ocorrencias.db')
+    conect = sqlite3.connect('ocorrencias.db')
 
     cursor = conect.cursor()
 
@@ -51,7 +51,7 @@ def validar_id(ident):
 def validar_id_admin(ident):
     import sqlite3
 
-    conect = sqlite3.connect('./ocorrencias.db')
+    conect = sqlite3.connect('ocorrencias.db')
 
     cursor = conect.cursor()
 
@@ -105,7 +105,7 @@ def cadas_user():
         else:
             print('A senha deve conter apenas letras e numeros')  
 
-    conect = sqlite3.connect('./ocorrencias.db')
+    conect = sqlite3.connect('ocorrencias.db')
 
     cursor = conect.cursor()
 
@@ -147,7 +147,7 @@ def cadas_admin():
         else:
             print('A senha deve conter apenas letras e numeros') 
 
-    conect = sqlite3.connect('./ocorrencias.db')
+    conect = sqlite3.connect('ocorrencias.db')
 
     cursor = conect.cursor()
 

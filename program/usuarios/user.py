@@ -15,7 +15,7 @@ def toStringOCO(cpf):
 
     i = 0
 
-    conect = sqlite3.connect('./ocorrencias.db')
+    conect = sqlite3.connect('ocorrencias.db')
 
 
     program = f"select * from casos as A where A.cpf = '{cpf}' ;"

@@ -2,7 +2,7 @@
 def test_user(usuario_inserido, senha_inserida):
     import sqlite3
 
-    conect = sqlite3.connect('./ocorrencias.db')
+    conect = sqlite3.connect('ocorrencias.db')
 
     cursor = conect.cursor()
 
