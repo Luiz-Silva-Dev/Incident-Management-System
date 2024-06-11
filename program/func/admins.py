@@ -1,6 +1,5 @@
 def toStringOCO():
     import sqlite3
-    import func.ocorrencias as oco
 
     
     class Ocorrencia():

@@ -1,7 +1,5 @@
 def toStringOCO(cpf):
     import sqlite3
-    import func.ocorrencias as oco
-
     
     class Ocorrencia():
         def __init__(self, cpf, endereco, numero, cep, tipo, prioridade, estado):
@@ -37,9 +35,9 @@ Endereco: {ocorrencia.endereco}, {ocorrencia.numero}, {ocorrencia.cep}
 Estado: {ocorrencia.estado}''')
 
 def usuario_menu():
-    from func.ocorrencias import criar_ocorencia
+    from ocorrencias import criar_ocorencia
     import sqlite3
-    import func.cadastro as cad
+    import cadastro as cad
 
     while True:
         select = input('''
